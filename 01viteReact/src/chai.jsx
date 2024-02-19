@@ -1,6 +1,6 @@
 function Chai(){
     return(
-        <h3>chai is  zdvready</h3>
+        <h3>chai is  ready</h3>
     )
 }
 
