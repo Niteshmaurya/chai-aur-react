@@ -15,7 +15,7 @@ let newArr = [1,2,3,4]
     <>
     <h1 className='bg-green-400 text-black p-4 rounded-xl mb-4'>Tailwind Test</h1>
    <Card username = "chaiAurCode"  anotherObj = {myObj} someObj = {newArr} clickme = "touch Me" />
-   <Card username="vikas" />
+   <Card username="paris" clickme = "touch Me" />
     </>
   )
 }

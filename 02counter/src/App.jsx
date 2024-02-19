@@ -6,6 +6,7 @@ import './App.css'
 function App() {
   const [counter, setCounter] = useState(15)
 
+
     // let counter = 15
   
    
@@ -28,7 +29,7 @@ const removeValue = () =>{
 }
   return (
    <>
-   <h1>Chai Aur React</h1>
+   <h1> React Js</h1>
    <h1>Counter value : {counter}</h1>
 
    <button 
@@ -40,4 +41,5 @@ const removeValue = () =>{
   )
 }
    
-export default App
+export default App 
+//9326661281 janki maurya
