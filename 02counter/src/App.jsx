@@ -12,7 +12,7 @@ function App() {
    
   function addValue(){
     // counter++;
-    setCounter(counter+1)   // ye batches me divide karta hai isliye ek sath 4 ka addition nahi ho sakega 
+    setCounter(counter+1)   // ye batches me divide karta hai isliye ek sath 4 ka addition nahi ho sakega   
     // iska solution hai ki tum prevCounter define karke karo 
     setCounter(counter+1)
     setCounter(counter+1)

@@ -16,7 +16,6 @@ function App() {
   const passwordGen = useCallback(()=>{
     let pass = ""
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-
     if(numberAllowed) str = str + "0123456789"
     if(charAllowed) str = str + "!@#$%^&*()_+=[]{}\|~`"
 
@@ -32,11 +31,15 @@ function App() {
 
   const copyPasswordToClipBoard = useCallback(()=>{
     let max=50;
-    passwordRef.current?.select();
+    passwordRef.current.select();
     // passwordRef.current?.setSelectionRange(0,3);
-
+    alert('Copied text: '+passwordRef.current.value );
     window.navigator.clipboard.writeText(password)
   },[password])
+
+  const copiedAck = ()=>{
+    let copyBtn = document.querySelector()
+  }
 
   
   
@@ -62,7 +65,7 @@ useEffect(() => {
          <button
          onClick={copyPasswordToClipBoard }
          
-        className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>copy</button>
+        className='outline-none hover:bg-sky-700 bg-blue-700 text-white px-3 py-0.5 shrink-0'>copy</button>
 
         <div className='flex text-sm gap-x-1'>
           <div className='flex item-center gap x-1'>

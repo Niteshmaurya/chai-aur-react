@@ -6,7 +6,7 @@ import useCurrencyInfo from './hooks/useCurrencyInfo'
 
 function App() {
 
-  const [amount,setAmount] = useState(0)
+  const [amount,setAmount] = useState(1)
   const [from,setFrom] = useState("usd")
   const [to,setTo] = useState("inr")
   const [convertedAmount,setconvertedAmount] = useState(0)
@@ -49,7 +49,7 @@ function App() {
                             amount={amount}
                             currencyOptions={options}
                             onCurrencyChange={(currency)=>
-                              setTo(currency)
+                              setFrom(currency)
                             }
                             selectCurrency={from}
                             onAmountChange={(amount)=>setAmount(amount)}
@@ -80,7 +80,7 @@ function App() {
                         />
                     </div>
                     <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
-                        convert {from.toUpperCase()} to {to.toUpperCase()}
+                        convert {from.toUpperCase()} to {to .toUpperCase()}
                     </button>
                 </form>
             </div>
